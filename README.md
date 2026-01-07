@@ -29,7 +29,9 @@ Desenvolvi uma plataforma web centralizada onde a equipa da construtora alimenta
 ### 📸 Screenshots
 | Dashboard de Progresso | Relatório PLS |
 |---|---|
-| ![Dashboard](images/const-dash.png) | ![PLS](images/const-pls.png) |
+| <img width="1632" height="853" alt="image" src="https://github.com/user-attachments/assets/d7dbde8a-b09c-4bba-8c58-34deec650f94" />
+ | <img width="1445" height="859" alt="image" src="https://github.com/user-attachments/assets/0df32a72-17ac-4098-8649-bf4cc24d4633" /> 
+|
 
 ---
 ### 👨‍💻 Autor
