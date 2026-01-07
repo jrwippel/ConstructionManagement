@@ -1,0 +1,49 @@
+﻿@model WebAppSystems.Models.Execucao
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Execucao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ObraId" class="control-label"></label>
+                <select asp-for="ObraId" class="form-control" asp-items="ViewBag.ObraId"></select>
+                <span asp-validation-for="ObraId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EtapaId" class="control-label"></label>
+                <select asp-for="EtapaId" class="form-control" asp-items="ViewBag.EtapaId"></select>
+                <span asp-validation-for="EtapaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ServicoId" class="control-label"></label>
+                <select asp-for="ServicoId" class="form-control" asp-items="ViewBag.ServicoId"></select>
+                <span asp-validation-for="ServicoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PercentualExecucao" class="control-label"></label>
+                <input asp-for="PercentualExecucao" class="form-control" />
+                <span asp-validation-for="PercentualExecucao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

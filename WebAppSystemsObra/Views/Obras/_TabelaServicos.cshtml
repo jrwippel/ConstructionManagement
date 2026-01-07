@@ -1,0 +1,23 @@
+﻿@model IEnumerable<WebAppSystems.Models.Servico>
+
+@foreach (var servico in Model)
+{
+    <tr>
+        <td>@servico.Descricao</td>
+        <td class="text-center">@servico.PercentualIncidencia%</td>
+        <td>
+            <input type="number" class="form-control execucaoInput text-center"
+                   data-servico-id="@servico.Id"
+                   data-incidencia="@servico.PercentualIncidencia" />
+        </td>
+        <td class="resultadoExecucao text-center">0%</td>
+        <td class="text-center">
+            <button class="btn btn-sm btn-outline-secondary editar-servico"
+                    data-id="@servico.Id"
+                    data-descricao="@servico.Descricao"
+                    data-incidencia="@servico.PercentualIncidencia.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture)">
+                <i class="bi bi-pencil"></i>
+            </button>
+        </td>
+    </tr>
+}
